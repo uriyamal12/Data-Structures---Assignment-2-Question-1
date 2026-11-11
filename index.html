@@ -8,27 +8,17 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700;800&display=swap');
     :root{color-scheme:dark;--bg:#0e1221;--line:rgba(255,255,255,.1);--text:#f4f5fb;--muted:#a3abc2;--purple:#a78bfa;--cyan:#67e8f9;--green:#86efac;--shadow:0 24px 70px rgba(0,0,0,.28)}
-    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 12% 0%,rgba(99,102,241,.19),transparent 34%),radial-gradient(ellipse at 96% 28%,rgba(34,211,238,.1),transparent 28%),var(--bg);color:var(--text);font-family:'Heebo','Rubik',sans-serif;line-height:1.6}
-    button,input{font:inherit}button{cursor:pointer}.shell{width:min(1120px,calc(100% - 36px));margin:0 auto;padding:32px 0 52px}.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:43px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px}.brand-mark{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#8b5cf6,#22d3ee);box-shadow:0 8px 26px #8b5cf644;font-size:22px}.tag{border:1px solid var(--line);border-radius:999px;padding:8px 13px;color:#d4d8e8;font-size:14px;background:#ffffff06}.hero{text-align:center;max-width:780px;margin:0 auto 34px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#c4b5fd;background:#a78bfa14;border:1px solid #a78bfa30;padding:7px 13px;border-radius:999px;font-size:14px;font-weight:600}.eyebrow i{width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green)}h1{font-size:clamp(36px,6vw,57px);line-height:1.12;letter-spacing:-1.6px;margin:17px 0 12px;font-weight:800}.gradient{background:linear-gradient(100deg,#c4b5fd,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);font-size:18px;margin:0 auto;max-width:680px}.formula{display:inline-block;margin-top:18px;padding:11px 20px;border:1px solid var(--line);border-radius:13px;background:#ffffff07;color:#f0f1f8;font-family:'Rubik',sans-serif;font-size:22px;direction:ltr;unicode-bidi:isolate}.layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.8fr);gap:20px;align-items:start}.card{background:linear-gradient(155deg,#1a2035ee,#151a2bee);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}.workbench{padding:25px}.card-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:21px}.card-title h2,.side-card h2{margin:0;font-size:22px;letter-spacing:-.3px}.step{color:var(--muted);font-size:14px}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{padding:16px;border-radius:16px;background:#101528;border:1px solid var(--line);transition:border-color .2s}.field:focus-within{border-color:#a78bfa88}.label-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.label{font-weight:700;font-size:17px}.list-pill{font:700 14px 'Rubik',sans-serif;border-radius:8px;padding:4px 9px;background:#a78bfa19;color:#c4b5fd;direction:ltr}.list-pill.b{background:#67e8f915;color:var(--cyan)}input{width:100%;border:0;outline:0;background:transparent;color:var(--text);font-family:'Rubik',sans-serif;font-size:19px;direction:ltr;text-align:left}input::placeholder{color:#68718b}.hint{font-size:14px;color:#929bb3;margin-top:7px}.mode-box{margin-top:20px}.mode-label{font-size:16px;font-weight:700;margin-bottom:10px}.mode-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mode-option{position:relative}.mode-option input{position:absolute;opacity:0;pointer-events:none}.mode-option label{display:flex;gap:11px;align-items:flex-start;padding:14px;border:1px solid var(--line);border-radius:14px;background:#ffffff04;cursor:pointer;transition:.2s}.mode-option input:checked+label{border-color:#a78bfa88;background:#a78bfa12;box-shadow:inset 0 0 0 1px #a78bfa22}.radio-dot{width:18px;height:18px;border-radius:50%;border:1px solid #69718a;margin-top:3px;flex:none;position:relative}.mode-option input:checked+label .radio-dot{border-color:var(--purple)}.mode-option input:checked+label .radio-dot:after{content:'';position:absolute;inset:4px;background:var(--purple);border-radius:50%}.mode-copy b{display:block;font-size:16px}.mode-copy small{display:block;color:var(--muted);font-size:13px;margin-top:3px}.actions{display:flex;gap:10px;margin-top:20px}.primary,.secondary{border:0;border-radius:12px;padding:12px 19px;font-weight:700;font-size:16px;transition:transform .15s,filter .15s}.primary{color:#111327;background:linear-gradient(100deg,#c4b5fd,#67e8f9);box-shadow:0 8px 22px #8b5cf629;flex:1}.secondary{background:#ffffff0b;border:1px solid var(--line);color:#cbd0df}.primary:hover,.secondary:hover{filter:brightness(1.08);transform:translateY(-1px)}.error{min-height:22px;color:#fda4af;font-size:14px;margin-top:10px}.side{display:grid;gap:16px}.side-card{padding:21px}.side-card p{color:var(--muted);font-size:15px;margin:9px 0 0}.complexity{display:flex;gap:10px;margin-top:15px}.complexity div{flex:1;background:#ffffff06;border:1px solid var(--line);border-radius:12px;padding:11px}.complexity small{display:block;color:var(--muted);font-size:13px}.complexity strong{display:block;margin-top:2px;font:700 17px 'Rubik',sans-serif;color:var(--cyan);direction:ltr}.result{margin-top:20px;padding:23px;display:none;animation:rise .35s ease both}.result.show{display:block}@keyframes rise{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}.result-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.result-head h2{margin:0;font-size:22px}.runtime{font-family:'Rubik',sans-serif;color:#c4b5fd;font-size:15px;background:#a78bfa16;padding:8px 11px;border-radius:10px;direction:ltr;white-space:nowrap}.lists{display:grid;gap:13px}.list-row{display:grid;grid-template-columns:54px 1fr;gap:12px;align-items:center}.list-name{font:700 16px 'Rubik',sans-serif;direction:ltr;color:#d0d6ea}.nodes{display:flex;align-items:center;gap:7px;overflow-x:auto;padding:8px 2px 11px;direction:ltr;scrollbar-width:thin}.node{position:relative;flex:none;min-width:55px;text-align:center;padding:9px 10px;border-radius:11px;border:1px solid var(--line);background:#ffffff08;font:600 16px 'Rubik',sans-serif;color:#edf0fb;direction:ltr}.node small{position:absolute;top:-19px;left:50%;transform:translateX(-50%);font-size:12px;color:#9da7c0;white-space:nowrap}.node.a{border-color:#a78bfa55;background:#a78bfa12}.node.b{border-color:#67e8f955;background:#67e8f90d}.node.c{border-color:#86efac66;background:#86efac12;color:#bbf7d0}.arrow{color:#8791aa;font-size:19px;flex:none}.null{color:#8992aa;font-size:13px;direction:ltr}.result-note{font-size:14px;color:var(--muted);margin:14px 0 0}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);padding:11px 16px;border-radius:12px;background:#252c43;border:1px solid var(--line);box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.25s;font-size:14px}.toast.visible{opacity:1;transform:translate(-50%,0)}footer{text-align:center;color:#8b94ac;font-size:14px;margin-top:30px}
-    @media(max-width:820px){.layout{grid-template-columns:1fr}.side{grid-template-columns:1fr 1fr}.topbar{margin-bottom:36px}}
-    @media(max-width:560px){.shell{width:min(100% - 22px,1120px);padding-top:18px}.topbar{margin-bottom:30px}.tag{font-size:12px}.workbench{padding:17px}.field-grid{grid-template-columns:1fr}.mode-options{grid-template-columns:1fr}.side{grid-template-columns:1fr}.result{padding:17px}.result-head{align-items:flex-start;flex-direction:column}.formula{font-size:19px}.hero p{font-size:16px}}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 12% 0%,rgba(99,102,241,.19),transparent 34%),radial-gradient(ellipse at 96% 28%,rgba(34,211,238,.1),transparent 28%),var(--bg);color:var(--text);font-family:'Heebo','Rubik',sans-serif;line-height:1.6}button,input{font:inherit}button{cursor:pointer}.shell{width:min(1120px,calc(100% - 36px));margin:auto;padding:28px 0 46px}.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:38px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:18px}.brand-mark{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#8b5cf6,#22d3ee);box-shadow:0 8px 26px #8b5cf644;font-size:22px}.tag{border:1px solid var(--line);border-radius:999px;padding:8px 13px;color:#d4d8e8;font-size:14px;background:#ffffff06}.hero{text-align:center;max-width:780px;margin:0 auto 30px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#c4b5fd;background:#a78bfa14;border:1px solid #a78bfa30;padding:7px 13px;border-radius:999px;font-size:14px;font-weight:600}.eyebrow i{width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green)}h1{font-size:clamp(36px,6vw,56px);line-height:1.12;letter-spacing:-1.5px;margin:16px 0 10px;font-weight:800}.gradient{background:linear-gradient(100deg,#c4b5fd,#67e8f9);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);font-size:18px;margin:0 auto;max-width:680px}.formula{display:inline-block;margin-top:16px;padding:10px 20px;border:1px solid var(--line);border-radius:13px;background:#ffffff07;color:#f0f1f8;font-family:'Rubik',sans-serif;font-size:22px;direction:ltr;unicode-bidi:isolate}.layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(290px,.8fr);gap:20px;align-items:start}.card{background:linear-gradient(155deg,#1a2035ee,#151a2bee);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}.workbench{padding:24px}.card-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.card-title h2,.side-card h2{margin:0;font-size:21px}.step{color:var(--muted);font-size:14px}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{padding:15px;border-radius:16px;background:#101528;border:1px solid var(--line);transition:border-color .2s}.field:focus-within{border-color:#a78bfa88}.label-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}.label{font-weight:700;font-size:17px}.list-pill{font:700 14px 'Rubik',sans-serif;border-radius:8px;padding:4px 9px;background:#a78bfa19;color:#c4b5fd;direction:ltr}.list-pill.b{background:#67e8f915;color:var(--cyan)}input[type=text]{width:100%;border:0;outline:0;background:transparent;color:var(--text);font-family:'Rubik',sans-serif;font-size:19px;direction:ltr;text-align:left}input::placeholder{color:#68718b}.hint{font-size:14px;color:#929bb3;margin-top:6px}.mode-box{margin-top:19px}.mode-label{font-size:16px;font-weight:700;margin-bottom:9px}.mode-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mode-option{position:relative}.mode-option input{position:absolute;opacity:0;pointer-events:none}.mode-option label{display:flex;gap:10px;align-items:flex-start;padding:13px;border:1px solid var(--line);border-radius:14px;background:#ffffff04;cursor:pointer;transition:.2s}.mode-option input:checked+label{border-color:#a78bfa88;background:#a78bfa12;box-shadow:inset 0 0 0 1px #a78bfa22}.radio-dot{width:18px;height:18px;border-radius:50%;border:1px solid #69718a;margin-top:3px;flex:none;position:relative}.mode-option input:checked+label .radio-dot{border-color:var(--purple)}.mode-option input:checked+label .radio-dot:after{content:'';position:absolute;inset:4px;background:var(--purple);border-radius:50%}.mode-copy b{display:block;font-size:16px}.mode-copy small{display:block;color:var(--muted);font-size:13px;margin-top:2px}.actions{display:flex;gap:10px;margin-top:18px}.primary,.secondary{border:0;border-radius:12px;padding:11px 18px;font-weight:700;font-size:16px;transition:transform .15s,filter .15s}.primary{color:#111327;background:linear-gradient(100deg,#c4b5fd,#67e8f9);box-shadow:0 8px 22px #8b5cf629;flex:1}.secondary{background:#ffffff0b;border:1px solid var(--line);color:#cbd0df}.primary:hover,.secondary:hover{filter:brightness(1.08);transform:translateY(-1px)}.error{min-height:21px;color:#fda4af;font-size:14px;margin-top:9px}.side{display:grid;gap:15px}.side-card{padding:20px}.side-card p{color:var(--muted);font-size:15px;margin:8px 0 0}.complexity{display:flex;gap:10px;margin-top:14px}.complexity div{flex:1;background:#ffffff06;border:1px solid var(--line);border-radius:12px;padding:10px}.complexity small{display:block;color:var(--muted);font-size:13px}.complexity strong{display:block;margin-top:2px;font:700 17px 'Rubik',sans-serif;color:var(--cyan);direction:ltr}.result{margin-top:20px;padding:22px;display:none;animation:rise .35s ease both}.result.show{display:block}@keyframes rise{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}.result-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.result-head h2{margin:0;font-size:22px}.runtime{font-family:'Rubik',sans-serif;color:#c4b5fd;font-size:15px;background:#a78bfa16;padding:8px 11px;border-radius:10px;direction:ltr;white-space:nowrap}.lists{display:grid;gap:8px}.list-row{display:grid;grid-template-columns:58px 1fr;gap:12px;align-items:center}.list-name{font:700 17px 'Rubik',sans-serif;direction:ltr;color:#e0e5f4}.nodes{display:flex;align-items:center;gap:7px;overflow-x:auto;padding:5px 2px 8px;direction:ltr;scrollbar-width:thin}.node{flex:none;min-width:57px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:6px 9px;border-radius:11px;border:1px solid var(--line);background:#ffffff08;font:600 16px 'Rubik',sans-serif;color:#edf0fb;direction:ltr}.node small{font-size:11px;color:#aab3ca;font-weight:500;line-height:1.1}.node.a{border-color:#a78bfa55;background:#a78bfa12}.node.b{border-color:#67e8f955;background:#67e8f90d}.node.c{border-color:#86efac66;background:#86efac12;color:#bbf7d0}.arrow{color:#8791aa;font-size:19px;flex:none}.null{color:#8992aa;font-size:13px;direction:ltr;flex:none}.result-note{font-size:14px;color:var(--muted);margin:13px 0 0}.benchmark-note{color:#bec6db}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);padding:11px 16px;border-radius:12px;background:#252c43;border:1px solid var(--line);box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.25s;font-size:14px}.toast.visible{opacity:1;transform:translate(-50%,0)}footer{text-align:center;color:#8b94ac;font-size:14px;margin-top:27px}
+    @media(max-width:820px){.layout{grid-template-columns:1fr}.side{grid-template-columns:1fr 1fr}.topbar{margin-bottom:32px}}
+    @media(max-width:560px){.shell{width:min(100% - 22px,1120px);padding-top:17px}.topbar{margin-bottom:27px}.tag{font-size:12px}.workbench{padding:16px}.field-grid,.mode-options,.side{grid-template-columns:1fr}.result{padding:16px}.result-head{align-items:flex-start;flex-direction:column}.formula{font-size:19px}.hero p{font-size:16px}.list-row{grid-template-columns:48px 1fr;gap:7px}.node{min-width:51px}}
   </style>
 </head>
 <body>
   <main class="shell">
-    <header class="topbar">
-      <div class="brand"><div class="brand-mark">↗</div><span>מעבדת מבני נתונים</span></div>
-      <span class="tag">מטלה 2 · שאלה 1</span>
-    </header>
-    <section class="hero">
-      <span class="eyebrow"><i></i> סביבת תרגול אינטראקטיבית</span>
-      <h1>מחברים רשימות,<br><span class="gradient">בונים תוצאה</span></h1>
-      <p>הכניסו שתי רשימות של מספרים טבעיים ובחרו את סוג הרשימה. נחשב את הרשימה השלישית ונציג את זמן הריצה.</p>
-      <div class="formula" aria-label="c sub k equals sum from i equals 1 to k of a sub i times b sub k minus i plus 1">c<sub>k</sub> = ∑<sub>i=1</sub><sup>k</sup> a<sub>i</sub> · b<sub>k−i+1</sub></div>
-    </section>
+    <header class="topbar"><div class="brand"><div class="brand-mark">↗</div><span>מעבדת מבני נתונים</span></div><span class="tag">מטלה 2 · שאלה 1</span></header>
+    <section class="hero"><span class="eyebrow"><i></i> סביבת תרגול אינטראקטיבית</span><h1>מחברים רשימות,<br><span class="gradient">בונים תוצאה</span></h1><p>הכניסו שתי רשימות של מספרים טבעיים ובחרו את סוג הרשימה. נחשב את הרשימה השלישית ונציג מדידת זמן יציבה יותר.</p><div class="formula" aria-label="c sub k equals sum from i equals 1 to k of a sub i times b sub k minus i plus 1">c<sub>k</sub> = ∑<sub>i=1</sub><sup>k</sup> a<sub>i</sub> · b<sub>k−i+1</sub></div></section>
     <div class="layout">
-      <section class="card workbench" aria-labelledby="input-title">
-        <div class="card-title"><h2 id="input-title">הנתונים שלכם</h2><span class="step">שלב 1 מתוך 2</span></div>
+      <section class="card workbench" aria-labelledby="input-title"><div class="card-title"><h2 id="input-title">הנתונים שלכם</h2><span class="step">שלב 1 מתוך 2</span></div>
         <div class="field-grid">
           <div class="field"><div class="label-row"><label class="label" for="listA">רשימה ראשונה</label><span class="list-pill">L₁ · a</span></div><input id="listA" type="text" inputmode="numeric" autocomplete="off" placeholder="למשל: 1, 2, 3, 4"><div class="hint">הפרידו בין המספרים בפסיקים או ברווחים</div></div>
           <div class="field"><div class="label-row"><label class="label" for="listB">רשימה שנייה</label><span class="list-pill b">L₂ · b</span></div><input id="listB" type="text" inputmode="numeric" autocomplete="off" placeholder="למשל: 5, 6, 7, 8"><div class="hint">מספר האיברים צריך להיות זהה בשתי הרשימות</div></div>
@@ -37,121 +27,28 @@
           <div class="mode-option"><input type="radio" name="mode" id="singly" value="singly" checked><label for="singly"><span class="radio-dot"></span><span class="mode-copy"><b>חד כיוונית</b><small>מעבר קדימה בלבד · הרשימות המקוריות נשארות ללא שינוי</small></span></label></div>
           <div class="mode-option"><input type="radio" name="mode" id="doubly" value="doubly"><label for="doubly"><span class="radio-dot"></span><span class="mode-copy"><b>דו כיוונית</b><small>מעבר קדימה ואחורה · הרשימות המקוריות נשארות ללא שינוי</small></span></label></div>
         </div></div>
-        <div class="actions"><button class="primary" id="calculate">חשבו את L₃ <span aria-hidden="true">←</span></button><button class="secondary" id="example">דוגמה</button></div>
-        <div class="error" id="error" role="alert" aria-live="polite"></div>
+        <div class="actions"><button class="primary" id="calculate">חשבו את L₃ <span aria-hidden="true">←</span></button><button class="secondary" id="example">דוגמה</button></div><div class="error" id="error" role="alert" aria-live="polite"></div>
       </section>
       <aside class="side">
         <section class="card side-card"><h2>איך זה עובד?</h2><p>עבור כל צומת k ברשימה L₃, מכפילים את האיברים המתאימים של L₁ ו־L₂ ומחברים את המכפלות. הרשימות המקוריות אינן משתנות.</p><div class="complexity"><div><small>זמן ריצה</small><strong>O(n²)</strong></div><div><small>זיכרון נוסף</small><strong>O(n)</strong></div></div></section>
-        <section class="card side-card"><h2>בלי להפוך את הרשימות</h2><p>בגרסה חד כיוונית משתמשים במחסנית עזר של הפניות לצמתים כדי לחשב את המכפלות בסדר הנכון. בגרסה דו כיוונית נעים לאחור בעזרת מצביעי prev.</p></section>
+        <section class="card side-card"><h2>בלי להפוך את הרשימות</h2><p>בגרסה חד כיוונית משתמשים במחסנית עזר של הפניות לצמתים כדי לחשב בסדר הנדרש. בגרסה דו כיוונית נעים לאחור בעזרת מצביעי prev.</p></section>
       </aside>
     </div>
-    <section class="card result" id="result" aria-live="polite">
-      <div class="result-head"><h2>התוצאה שלכם <span class="gradient">· L₃</span></h2><span class="runtime" id="runtime">—</span></div>
-      <div class="lists" id="listView"></div>
-      <p class="result-note" id="resultNote"></p>
-    </section>
+    <section class="card result" id="result" aria-live="polite"><div class="result-head"><h2>התוצאה שלכם <span class="gradient">· L₃</span></h2><span class="runtime" id="runtime">—</span></div><div class="lists" id="listView"></div><p class="result-note" id="resultNote"></p></section>
     <footer>מגישים: אוריה מלין ויצחק דוד נהון · כל החישובים מתבצעים מקומית בדפדפן</footer>
   </main>
   <div class="toast" id="toast" role="status">הדוגמה הוזנה</div>
   <script>
-    class Node {
-      constructor(value, doubly = false) { this.value = value; this.next = null; if (doubly) this.prev = null; }
-    }
-    function makeList(values, doubly) {
-      let head = null, tail = null;
-      for (const value of values) {
-        const node = new Node(value, doubly);
-        if (!head) head = node;
-        else { tail.next = node; if (doubly) node.prev = tail; }
-        tail = node;
-      }
-      return { head, tail };
-    }
-    function parseList(input, label) {
-      const raw = input.trim();
-      if (!raw) throw new Error(`נא להזין ערכים עבור ${label}.`);
-      const parts = raw.split(/[\s,;]+/).filter(Boolean);
-      return parts.map(value => {
-        if (!/^\d+$/.test(value)) throw new Error(`ברשימה ${label} נמצא ערך לא תקין: "${value}". הזינו מספרים טבעיים בלבד.`);
-        const number = Number(value);
-        if (!Number.isSafeInteger(number)) throw new Error(`המספר "${value}" גדול מדי.`);
-        return number;
-      });
-    }
-    // Computes c_k = sum(i=1..k) a_i * b_(k-i+1) without changing either input list.
-    function calculateLists(first, second, doubly) {
-      let outHead = null, outTail = null;
-      for (let k = 1; k <= first.length; k++) {
-        let sum = 0;
-        if (doubly) {
-          let a = first.head, b = second.head;
-          for (let step = 1; step < k; step++) b = b.next;
-          for (let i = 0; i < k; i++) {
-            sum += a.value * b.value;
-            if (!Number.isSafeInteger(sum)) throw new Error('הסכום גדול מדי להצגה מדויקת במספר רגיל.');
-            a = a.next; b = b.prev;
-          }
-        } else {
-          const stack = [];
-          let a = first.head, b = second.head;
-          for (let i = 0; i < k; i++) { stack.push(a); a = a.next; }
-          for (let i = 0; i < k; i++) {
-            sum += stack.pop().value * b.value;
-            if (!Number.isSafeInteger(sum)) throw new Error('הסכום גדול מדי להצגה מדויקת במספר רגיל.');
-            b = b.next;
-          }
-        }
-        const node = new Node(sum, doubly);
-        if (!outHead) outHead = node;
-        else { outTail.next = node; if (doubly) node.prev = outTail; }
-        outTail = node;
-      }
-      return { head: outHead };
-    }
-    function appendList(container, label, head, kind, count) {
-      const row = document.createElement('div'); row.className = 'list-row';
-      const name = document.createElement('span'); name.className = 'list-name'; name.textContent = label;
-      const nodes = document.createElement('div'); nodes.className = 'nodes';
-      let current = head, index = 1;
-      while (current) {
-        if (index > 1) { const arrow = document.createElement('span'); arrow.className = 'arrow'; arrow.textContent = '→'; nodes.append(arrow); }
-        const node = document.createElement('span'); node.className = `node ${kind}`;
-        const sub = document.createElement('small'); sub.textContent = kind === 'c' ? `c${index}` : `${kind}${index}`;
-        node.append(sub, document.createTextNode(current.value)); nodes.append(node);
-        current = current.next; index++;
-      }
-      if (count === 0) { const empty = document.createElement('span'); empty.className = 'null'; empty.textContent = '∅'; nodes.append(empty); }
-      const end = document.createElement('span'); end.className = 'null'; end.textContent = 'null'; nodes.append(end);
-      row.append(name, nodes); container.append(row);
-    }
-    const $ = id => document.getElementById(id);
-    function run() {
-      $('error').textContent = '';
-      try {
-        const a = parseList($('listA').value, 'L₁'), b = parseList($('listB').value, 'L₂');
-        if (a.length !== b.length) throw new Error(`בשתי הרשימות חייב להיות אותו מספר איברים (כרגע: ${a.length} ו־${b.length}).`);
-        const doubly = document.querySelector('input[name="mode"]:checked').value === 'doubly';
-        const first = makeList(a, doubly), second = makeList(b, doubly);
-        const start = performance.now();
-        const output = calculateLists(first, second, doubly);
-        const elapsed = performance.now() - start;
-        const view = $('listView'); view.replaceChildren();
-        appendList(view, 'L₁', first.head, 'a', a.length);
-        appendList(view, 'L₂', second.head, 'b', b.length);
-        appendList(view, 'L₃', output.head, 'c', a.length);
-        $('runtime').textContent = elapsed < 0.001 ? '< 0.001 ms' : `${elapsed.toFixed(3)} ms`;
-        $('resultNote').textContent = `${doubly ? 'גרסה דו כיוונית' : 'גרסה חד כיוונית'} · נוצרו ${a.length} צמתים. המדידה היא לחישוב ולבניית L₃ בלבד; בקלט קטן זמן הריצה עשוי להיות מתחת לדיוק של שעון הדפדפן.`;
-        $('result').classList.add('show');
-        $('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      } catch (error) { $('error').textContent = error.message; $('result').classList.remove('show'); }
-    }
-    $('calculate').addEventListener('click', run);
-    $('example').addEventListener('click', () => {
-      $('listA').value = '1, 2, 3, 4'; $('listB').value = '5, 6, 7, 8';
-      $('error').textContent = ''; $('toast').classList.add('visible');
-      setTimeout(() => $('toast').classList.remove('visible'), 1600); run();
-    });
-    document.querySelectorAll('input[type="text"]').forEach(input => input.addEventListener('keydown', event => { if (event.key === 'Enter') run(); }));
+    class Node { constructor(value, doubly=false){this.value=value;this.next=null;if(doubly)this.prev=null;} }
+    function makeList(values,doubly){let head=null,tail=null;for(const value of values){const node=new Node(value,doubly);if(!head)head=node;else{tail.next=node;if(doubly)node.prev=tail;}tail=node;}return{head,tail};}
+    function parseList(input,label){const raw=input.trim();if(!raw)throw new Error(`נא להזין ערכים עבור ${label}.`);return raw.split(/[\s,;]+/).filter(Boolean).map(value=>{if(!/^\d+$/.test(value))throw new Error(`ברשימה ${label} נמצא ערך לא תקין: "${value}". הזינו מספרים טבעיים בלבד.`);const number=Number(value);if(!Number.isSafeInteger(number))throw new Error(`המספר "${value}" גדול מדי.`);return number;});}
+    // c_k = sum(i=1..k) a_i * b_(k-i+1). Does not reverse or modify the input lists.
+    function calculateLists(first,second,n,doubly){let outHead=null,outTail=null;for(let k=1;k<=n;k++){let sum=0;if(doubly){let a=first.head,b=second.head;for(let j=1;j<k;j++)b=b.next;for(let i=0;i<k;i++){sum+=a.value*b.value;if(!Number.isSafeInteger(sum))throw new Error('הסכום גדול מדי להצגה מדויקת במספר רגיל.');a=a.next;b=b.prev;}}else{const stack=[];let a=first.head,b=second.head;for(let i=0;i<k;i++){stack.push(a);a=a.next;}for(let i=0;i<k;i++){sum+=stack.pop().value*b.value;if(!Number.isSafeInteger(sum))throw new Error('הסכום גדול מדי להצגה מדויקת במספר רגיל.');b=b.next;}}const node=new Node(sum,doubly);if(!outHead)outHead=node;else{outTail.next=node;if(doubly)node.prev=outTail;}outTail=node;}return{head:outHead};}
+    function appendList(container,label,head,kind,count){const row=document.createElement('div');row.className='list-row';const name=document.createElement('span');name.className='list-name';name.textContent=label;const nodes=document.createElement('div');nodes.className='nodes';let current=head,index=1;while(current){if(index>1){const arrow=document.createElement('span');arrow.className='arrow';arrow.textContent='→';nodes.append(arrow);}const node=document.createElement('span');node.className=`node ${kind}`;const sub=document.createElement('small');sub.textContent=kind==='c'?`c${index}`:`${kind}${index}`;node.append(sub,document.createTextNode(current.value));nodes.append(node);current=current.next;index++;}if(count===0){const empty=document.createElement('span');empty.className='null';empty.textContent='∅';nodes.append(empty);}const end=document.createElement('span');end.className='null';end.textContent='null';nodes.append(end);row.append(name,nodes);container.append(row);}
+    const $=id=>document.getElementById(id);
+    function benchmark(first,second,n,doubly){for(let i=0;i<5;i++)calculateLists(first,second,n,doubly);let rounds=0,last=null;const start=performance.now();let elapsed=0;do{last=calculateLists(first,second,n,doubly);rounds++;elapsed=performance.now()-start;}while(elapsed<30&&rounds<5000);return{last,rounds,average:elapsed/rounds,total:elapsed};}
+    function run(){ $('error').textContent='';try{const a=parseList($('listA').value,'L₁'),b=parseList($('listB').value,'L₂');if(a.length!==b.length)throw new Error(`בשתי הרשימות חייב להיות אותו מספר איברים (כרגע: ${a.length} ו־${b.length}).`);const doubly=document.querySelector('input[name="mode"]:checked').value==='doubly';const first=makeList(a,doubly),second=makeList(b,doubly);const measured=benchmark(first,second,a.length,doubly);const view=$('listView');view.replaceChildren();appendList(view,'L₁',first.head,'a',a.length);appendList(view,'L₂',second.head,'b',b.length);appendList(view,'L₃',measured.last.head,'c',a.length);$('runtime').textContent=measured.average<0.001?'< 0.001 ms':`~${measured.average.toFixed(3)} ms`;$('resultNote').textContent=`גרסה ${doubly?'דו':'חד'} כיוונית · נוצרו ${a.length} צמתים. ממוצע של ${measured.rounds} הרצות לאחר חימום, זמן כולל ${measured.total.toFixed(1)} ms. המדידה כוללת חישוב ובניית L₃ בלבד.`;$('result').classList.add('show');$('result').scrollIntoView({behavior:'smooth',block:'nearest'});}catch(error){$('error').textContent=error.message;$('result').classList.remove('show');}}
+    $('calculate').addEventListener('click',run);$('example').addEventListener('click',()=>{$('listA').value='1, 2, 3, 4';$('listB').value='5, 6, 7, 8';$('error').textContent='';$('toast').classList.add('visible');setTimeout(()=>$('toast').classList.remove('visible'),1600);run();});document.querySelectorAll('input[type="text"]').forEach(input=>input.addEventListener('keydown',event=>{if(event.key==='Enter')run();}));
   </script>
 </body>
 </html>
